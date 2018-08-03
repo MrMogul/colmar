@@ -1,0 +1,58 @@
+html{}
+
+body{
+	
+}
+
+header{
+	
+}
+
+.container{
+	display: flex;
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	height: 4rem;
+	margin: 0 1.5rem;
+	max-width: 100%;
+}
+
+.desktop-nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+.desktop-nav ul li{
+	display: inline;
+	padding-left: 1rem;
+}
+
+nav ul li a{
+	text-decoration: none;
+}
+
+.mobile-nav{
+	display: none;
+	
+}
+
+@media only screen and (max-width: 470px){
+	.desktop-nav{
+		display: none;
+	}
+	.mobile-nav{
+		display: block;
+		width: 100%;
+	}
+	.mobile-nav ul{
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	.logo{
+		display: none;
+	}
+}

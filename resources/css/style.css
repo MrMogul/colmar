@@ -1,58 +1,154 @@
-html{}
+/*******Global Styling*******/
+html{
+	font-size: 16px;
+}
 
 body{
-	
+	color: midnightblue;
 }
 
 header{
-	
+	width: 100%;
 }
+/****************************/
+
+
+/*******Typeface styling*******/
+h1{
+  font-size: 2.5rem;
+	font-weight: bold;
+}
+/******************************/
 
 .container{
-	display: flex;
+	width: 100%;
+	margin: 0 auto;
 }
 
+a{
+	text-decoration: none;
+	font-size: 1.125rem;
+}
+
+/*******Navigation Desktop*******/
 .navbar{
-	display: flex;
-	justify-content: space-between;
 	height: 4rem;
-	margin: 0 1.5rem;
-	max-width: 100%;
+	width: 100%;
+	background-color: green;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
 }
 
 .desktop-nav{
 	display: flex;
 	justify-content: space-between;
+  align-items: center;
+	width: 100%;
+	padding: 0 1.5rem;
 }
 
-.desktop-nav ul li{
-	display: inline;
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.logo span{
+	font-size: 1.25rem;
+}
+
+.logo .colmar{
+	font-weight: bold;
+}
+
+.logo .academy{
+	color: orangered;
+}
+
+nav ul li{
+	display: inline-block;
 	padding-left: 1rem;
 }
 
 nav ul li a{
-	text-decoration: none;
+	color: midnightblue;
 }
 
 .mobile-nav{
 	display: none;
-	
+}
+/**********************************/
+
+
+
+
+.banner.container{
+	display: flex;
+	align-items: center;
+	background-color: lightgray;
+	top: 3.5rem;
+	position: relative;
 }
 
+.banner .image {
+	width: 60%;
+	padding: 2rem 1.5rem;
+}
+
+.image img{
+	max-width: 100%;
+}
+
+.learn{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+.learn .learn-text{
+	padding: 1.5rem 7.5rem 1.5rem 1.5rem;
+}
+
+.learn .button{
+	padding: .5rem 1rem;
+	text-align: center;
+	background-color: orangered;
+	margin: auto;
+}
+
+/* Styling and animation for anchor button */
+
+.button a{
+	color: white;
+}
+
+.button:hover{
+	background-color: red;
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 470px){
+
+/*Navigation Mobile */
 	.desktop-nav{
 		display: none;
 	}
+
 	.mobile-nav{
-		display: block;
-		width: 100%;
-	}
-	.mobile-nav ul{
 		display: flex;
 		justify-content: space-between;
-		
+		width: 100%;
 	}
+
 	.logo{
 		display: none;
 	}
+
 }

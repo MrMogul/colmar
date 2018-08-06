@@ -7,46 +7,54 @@
 	<title>Colmar Academy</title>
 </head>
 <body>
+
   <header>
-    <!--Navigation Bar -->
-    <div class="navbar">
-	    <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo" class="logo">
-		<nav class="desktop-nav">
-		  <ul>
-		    <li><a href="#campus">On Campus</a></li>
-			<li><a href="#online">Online</a></li>
-			<li><a href="#companies">Companies</a></li>
-			<li><a href="#signin">Sign In</a></li>
-		  </ul>
-        </nav>
-		<nav class="mobile-nav">
-		  <ul>
-		    <li><a href="#campus"><img src="./resources/images/ic-logo.svg"></a></li>
-		    <li><a href="#campus"><img src="./resources/images/ic-on-campus.svg"></a></li>
-			<li><a href="#campus"><img src="./resources/images/ic-online.svg"></a></li>
-			<li><a href="#campus"><img src="./resources/images/ic-login.svg"></a></li>
-		  </ul>
-		</nav>
-	</div>
-  </header>
-	<!-- End Navigation Bar -->
-	
-	<!-- Banner Section -->
-	  <div class="container banner">
-	    <div class="image">
-		 <img src="./resources/images/banner.jpg" alt="Banner Image">
-		</div>
-		
-		<div class="learn">
-		  <h2>Learn Something New Everyday</h2>
-		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		  <div class="button">Start Here</div>
-		</div>
+		<!--Navigation Bar -->
+		<div class="navbar container">  <!-- Making div fixed, with z-index:1 -->
+		  <nav class="desktop-nav">  <!-- Wrapping elements into navbar and making nav a flex container -->
+				<div class="logo">
+					<img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
+					<span class="colmar">COLMAR</span><span class="academy">ACADEMY</span>
+				</div>
+			  <ul>
+				  <li><a href="#campus">On Campus</a></li>
+				  <li><a href="#online">Online</a></li>
+				  <li><a href="#companies">Companies</a></li>
+				  <li><a href="#signin">Sign In</a></li>
+			  </ul>
+		  </nav>
+	    <nav class="mobile-nav">
+			  <ul>
+			    <li><a href="#campus"><img src="./resources/images/ic-logo.svg"></a></li>
+			    <li><a href="#campus"><img src="./resources/images/ic-on-campus.svg"></a></li>
+			    <li><a href="#campus"><img src="./resources/images/ic-online.svg"></a></li>
+			    <li><a href="#campus"><img src="./resources/images/ic-login.svg"></a></li>
+			  </ul>
+		  </nav>
 	  </div>
-	<!-- End Banner Section -->  
-		
-	
-		    
+
+	 <!-- End Navigation Bar -->
+
+	<!-- Banner Section -->
+	  <div class="banner container">
+	    <div class="image">
+		    <img src="./resources/images/banner.jpg" alt="Banner Image">
+		  </div>
+
+		  <div class="learn">
+				<div class="learn-text">
+		      <h1>Learn Something New Everyday</h1>
+		      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+		      <div class="button">
+						<a href="#start">Start Here</a>
+					</div>
+		    </div>
+			</div>
+	  </div>
+	<!-- End Banner Section -->
+</header>
+
+
 
 
 </body>

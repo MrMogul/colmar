@@ -8,7 +8,6 @@ body{
 }
 
 header{
-	width: 100%;
 }
 /****************************/
 
@@ -56,7 +55,7 @@ a{
 }
 
 .logo span{
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 }
 
 .logo .colmar{
@@ -71,6 +70,7 @@ a{
 	display: inline-block;
 	padding-left: 1rem;
 }
+
 nav ul li{
 	list-style: none;
 }
@@ -89,15 +89,17 @@ nav ul li a{
 	align-items: center;
 	width: 100%;
 }
+
 .mobile-nav ul li{
 	padding: 0;
 }
+
 /**********************************/
 
 
 
 
-.banner.container{
+.banner{
 	display: flex;
 	align-items: center;
 	background-color: lightgray;

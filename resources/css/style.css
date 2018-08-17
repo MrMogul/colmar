@@ -120,7 +120,27 @@ nav ul li a{
 	padding: 0;
 }
 
-/**********************************/
+/***Navigation Mobile***/
+@media only screen and (max-width: 470px){
+	.desktop-nav{
+		display: none;
+	}
+
+	.mobile-nav{
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+  .mobile-nav ul{
+		padding: 0;  /* For Some reason there's padding on the left of the 'ul', so I removed it */
+	}
+
+	.logo{
+		display: none;
+	}
+}
+/****** End Navigation Section ******/
 
 /******Body Div*******/
 .body-container{
@@ -162,9 +182,46 @@ nav ul li a{
 }
 
 
-/*******************************/
+/****** Banner Section Mobile ******/
+@media only screen and (max-width: 470px){
 
-/************Information Section **********/
+	.banner{
+		flex-wrap: wrap;
+	}
+
+	.banner-image{
+		width: 100%;
+		padding: 0;
+	}
+
+	.learn{
+    width: 100%;
+	}
+
+	.learn .learn-text{
+		padding: 2rem 1rem;
+	}
+
+  .learn-text h1{
+	line-height: 1.2;
+	padding: 0;
+  }
+
+  .learn-text h2{
+  padding: 2rem 0 1.5rem 0;
+	line-height: 1.2;
+  }
+
+	.learn .button{
+		margin: auto;
+
+	}
+
+}
+
+/****** End Banner Section ******/
+
+/****** Information Section ******/
 
 .info{
 	display: flex;
@@ -189,7 +246,7 @@ nav ul li a{
 	width: 40%;
 	display: flex;
 	flex-direction: column;
-	border: 1px solid grey;
+	border-left: 1px solid grey;
 	padding-top: 1rem;
 }
 
@@ -198,7 +255,6 @@ nav ul li a{
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	border-bottom: 1px solid grey;
 	background-color: honeydew;
 	transition: background-color 250ms ease-in 300ms;
 }
@@ -217,9 +273,44 @@ nav ul li a{
 	width:100%;
 }
 
+.info .mobile-image{
+	display: none;
+}
+/****** Information Section Mobile ******/
+@media only screen and (max-width: 470px){
+  .practice{
+	  display: none;
+	}
+
+  .info .details{
+	  width: 100%;
+	  padding-bottom: 2rem;
+	}
+
+  .info .detail-box{
+	  display: flex;
+	  flex-direction: column;
+	  padding-bottom: 1.5rem;
+  }
+
+  .info .mobile-image{
+  	display: block;
+  	width: 100%;
+  }
+
+  .info .desktop-image{
+  	display: none;
+  }
+
+  .info .detail-text{
+  	padding-left: 2rem;
+  }
+
+}
+/****** End Information Section ******/
 
 
-/* Start Section */
+/****** Start Section ******/
 
 .start{
 	background-color: lightgray;
@@ -267,6 +358,40 @@ nav ul li a{
 	line-height: 1.2;
 }
 
+.start-mobile{
+	display: none;
+}
+
+/****** Start Learning Mobile Section ******/
+@media only screen and (max-width: 470px){
+  .start-box{
+		display: none;
+	}
+
+  .start-flex{
+	  padding: 0;
+  }
+
+	.start-mobile{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding:1rem;
+		justify-content: space-between;
+	}
+
+	.start-mobile-box{
+		background-color: white;
+		padding: 1rem 1rem 1.5rem 1rem;
+		margin-bottom: .5rem;
+	}
+	
+	.start-mobile-box h3{
+		text-align: left;
+	}
+
+}
+
 /*****End Start Learning Section******/
 
 /******Thesis Exhibit Section******/
@@ -308,6 +433,25 @@ nav ul li a{
 .thesis .detail-box{
 	border: none;
 }
+/******End Thesis Exhibit Section ******/
+
+/******Footer******/
+footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 1rem 2rem;
+	height: 2.5rem;
+	background-color: honeydew;
+}
+
+.footer-links{
+	display: inline;
+}
+
+.footer-links a{
+	padding-left: 1rem;
+}
 
 /* Styling and animation for anchor button */
 
@@ -316,33 +460,10 @@ nav ul li a{
 
 }
 
-.button:hover{
-	background-color: red;
+.button{
+	border-radius: .5rem;
 }
 
-
-
-
-
-
-
-@media only screen and (max-width: 470px){
-
-/*Navigation Mobile */
-	.desktop-nav{
-		display: none;
-	}
-
-	.mobile-nav{
-		display: flex;
-		justify-content: flex-start;
-		width: 100%;
-	}
-  .mobile-nav ul{
-		padding: 0;  /* For Some reason there's padding on the left of the 'ul', so I removed it */
-	}
-	.logo{
-		display: none;
-	}
-
+.button:hover{
+	background-color: red;
 }

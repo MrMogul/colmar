@@ -4,7 +4,7 @@ html{
 }
 
 body{
-	color: midnightblue;
+	color: blue;
 }
 
 header{
@@ -12,7 +12,7 @@ header{
 
 /******Body Div*******/
 .body-container{
-	margin-top: 3.5rem;
+
 	margin: auto;
 }
 
@@ -67,7 +67,7 @@ a{
 .navbar{
 	height: 4rem;
 	width: 100%;
-	background-color: green;
+	background-color: #3399cc;
 	position: fixed;
 	top: 0;
 	z-index: 1;
@@ -94,10 +94,11 @@ a{
 
 .logo .colmar{
 	font-weight: bold;
+	color: white;
 }
 
 .logo .academy{
-	color: orangered;
+	color: orange;
 }
 
 .desktop-nav ul li{
@@ -110,7 +111,12 @@ nav ul li{
 }
 
 nav ul li a{
-	color: midnightblue;
+	color: white;
+	transition: color 250ms ease-in 50ms;
+}
+
+nav ul li a:hover{
+	color: black;
 }
 
 .mobile-nav{
@@ -155,7 +161,9 @@ nav ul li a{
 .banner{
 	display: flex;
 	align-items: center;
-	background-color: lightgray;
+	background-color: black;
+	color: white;
+	margin-top: 3.5rem;
 }
 
 .banner-image {
@@ -178,11 +186,26 @@ nav ul li a{
 }
 
 .learn .button{
-	padding: .5rem 1rem;
 	text-align: center;
 	background-color: orangered;
 	margin: auto;
 	transition: background-color 250ms ease-in 50ms;
+}
+
+/* Styling and animation for anchor button */
+
+.button a{
+	color: white;
+	display: block;
+	padding: .5rem 1rem;
+}
+
+.button{
+	border-radius: .5rem;
+}
+
+.button:hover{
+	background-color: red;
 }
 
 
@@ -229,6 +252,7 @@ nav ul li a{
 
 .info{
 	display: flex;
+	background-color: #cdb99c;
 }
 
 .practice{
@@ -244,6 +268,7 @@ nav ul li a{
 
 .practice-text{
 	padding-top: 2rem;
+	color: orangered;
 }
 
 .details{
@@ -280,6 +305,7 @@ nav ul li a{
 .info .mobile-image{
 	display: none;
 }
+
 /****** Information Section Mobile ******/
 @media only screen and (max-width: 470px){
   .practice{
@@ -314,10 +340,10 @@ nav ul li a{
 /****** End Information Section ******/
 
 
-/****** Start Section ******/
+/****** Start Learning Section ******/
 
 .start{
-	background-color: lightgray;
+	background-color: #cdb99c;
 	text-align: center;
 }
 
@@ -484,18 +510,4 @@ footer{
 	.footer-links{
 		display: none;
 	}
-}
-/* Styling and animation for anchor button */
-
-.button a{
-	color: white;
-
-}
-
-.button{
-	border-radius: .5rem;
-}
-
-.button:hover{
-	background-color: red;
 }
